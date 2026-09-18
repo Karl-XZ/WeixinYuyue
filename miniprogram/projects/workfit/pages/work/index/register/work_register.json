@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+	},
+	"disableScroll": true,
+	"navigationBarBackgroundColor": "#1C9399",
+	"navigationBarTitleText": "教师注册",
+	"navigationBarTextStyle": "white"
+}

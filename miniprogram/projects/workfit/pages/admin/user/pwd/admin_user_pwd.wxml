@@ -1,0 +1,19 @@
+<view class="main-admin" wx:if="{{isAdmin}}">
+	<view class="form-box shadow">
+		<view class="hint-desc text-grey">当前正在修改学生「{{name||'未命名'}}」的密码。</view>
+
+		<view class="form-group">
+			<view class="title must">新密码</view>
+			<input maxlength="30" type="password" placeholder="请填写新密码" model:value="{{formPassword}}" focus="{{formPasswordFocus}}"></input>
+		</view>
+		<view wx:if="{{formPasswordFocus}}" class="hint-desc error">{{formPasswordFocus}}</view>
+
+		<view class="form-group">
+			<view class="title must">新密码再次填写</view>
+			<input maxlength="30" type="password" placeholder="请再次填写新密码" model:value="{{formPassword2}}" focus="{{formPassword2Focus}}"></input>
+		</view>
+		<view wx:if="{{formPassword2Focus}}" class="hint-desc error">{{formPassword2Focus}}</view>
+	</view>
+
+	<button bindtap="bindFormSubmit" class="btn-admin margin-top">提交修改</button>
+</view>

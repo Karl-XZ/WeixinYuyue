@@ -1,0 +1,22 @@
+@import '../../../../../../style/public/admin.wxss';
+
+.form-box {
+	padding: 30rpx;
+	border-radius: 10rpx;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20rpx 0rpx;
+}
+
+.form-group .title {
+	width: 180rpx;
+	color: #333;
+}
+
+.form-group input {
+	flex: 1;
+}

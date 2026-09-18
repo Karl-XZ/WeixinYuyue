@@ -1,0 +1,25 @@
+<view class="main">
+	<view class="form-box shadow">
+		<view class="hint-desc text-grey" wx:if="{{!hasPassword}}">当前还未设置密码，首次设置可不填写旧密码。</view>
+
+		<view class="form-group">
+			<view class="title {{hasPassword?'must':''}}">旧密码</view>
+			<input maxlength="30" type="password" placeholder="请填写旧密码" model:value="{{formOldPassword}}" focus="{{formOldPasswordFocus}}"></input>
+		</view>
+		<view wx:if="{{formOldPasswordFocus}}" class="hint-desc error">{{formOldPasswordFocus}}</view>
+
+		<view class="form-group">
+			<view class="title must">新密码</view>
+			<input maxlength="30" type="password" placeholder="请填写新密码" model:value="{{formPassword}}" focus="{{formPasswordFocus}}"></input>
+		</view>
+		<view wx:if="{{formPasswordFocus}}" class="hint-desc error">{{formPasswordFocus}}</view>
+
+		<view class="form-group">
+			<view class="title must">新密码再次填写</view>
+			<input maxlength="30" type="password" placeholder="请再次填写新密码" model:value="{{formPassword2}}" focus="{{formPassword2Focus}}"></input>
+		</view>
+		<view wx:if="{{formPassword2Focus}}" class="hint-desc error">{{formPassword2Focus}}</view>
+	</view>
+
+	<button bindtap="bindFormSubmit" class="btn margin-top" style="background:#FED202;color:#000;">提交修改</button>
+</view>

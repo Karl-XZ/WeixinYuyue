@@ -1,0 +1,184 @@
+<view wx:if="{{isLoad}}" class="legal-container">
+  <view class="legal-content">
+    <!-- 用户服务协议 -->
+    <view wx:if="{{type === 'agreement'}}">
+      <text class="legal-title">用户服务协议</text>
+
+      <text class="legal-heading">1. 服务条款的接受与修改</text>
+      <text class="legal-text">欢迎使用本小程序（以下简称"本服务"）。本服务协议（以下简称"本协议"）是您与本小程序运营方之间关于使用本服务所订立的协议。请您仔细阅读本协议，特别是免除或限制责任的条款。</text>
+
+      <text class="legal-text">本小程序有权根据需要随时修改本协议条款，并在小程序内予以公告。如您不同意修改后的协议，可以停止使用本服务；如您继续使用本服务，则视为您接受修改后的协议。</text>
+
+      <text class="legal-heading">2. 服务内容</text>
+      <text class="legal-text">本小程序提供课程预约、信息查询、用户互动等服务。具体服务内容以本小程序实际提供为准。</text>
+
+      <text class="legal-text">本小程序保留随时修改、中断或终止部分或全部服务的权利，而无需对用户或第三方承担任何责任。</text>
+
+      <text class="legal-heading">3. 用户注册与账号安全</text>
+      <text class="legal-text">您在本小程序注册时，应提供真实、准确、完整的个人资料。如您的个人资料发生变更，应及时更新。</text>
+
+      <text class="legal-text">您应妥善保管账号和密码，对通过您的账号进行的所有活动承担全部责任。如发现账号被他人非法使用，应立即通知本小程序。</text>
+
+      <text class="legal-text">您不得将账号转让、借给他人使用，否则由此产生的一切责任由您自行承担。</text>
+
+      <text class="legal-heading">4. 用户行为规范</text>
+      <text class="legal-text">您在使用本服务时，必须遵守中国相关法律法规，不得利用本服务制作、复制、发布、传播含有以下内容的信息：</text>
+      <text class="legal-text">（1）反对宪法所确定的基本原则的；</text>
+      <text class="legal-text">（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</text>
+      <text class="legal-text">（3）损害国家荣誉和利益的；</text>
+      <text class="legal-text">（4）煽动民族仇恨、民族歧视，破坏民族团结的；</text>
+      <text class="legal-text">（5）破坏国家宗教政策，宣扬邪教和封建迷信的；</text>
+      <text class="legal-text">（6）散布谣言，扰乱社会秩序，破坏社会稳定的；</text>
+      <text class="legal-text">（7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</text>
+      <text class="legal-text">（8）侮辱或者诽谤他人，侵害他人合法权益的；</text>
+      <text class="legal-text">（9）含有法律、行政法规禁止的其他内容的。</text>
+
+      <text class="legal-text">您不得利用本服务从事以下活动：</text>
+      <text class="legal-text">（1）发布虚假信息、诈骗信息；</text>
+      <text class="legal-text">（2）恶意注册账号、刷单、刷评论等干扰正常服务秩序的行为；</text>
+      <text class="legal-text">（3）破解、反向工程、反汇编或以其他方式获取本小程序的源代码；</text>
+      <text class="legal-text">（4）未经许可，使用自动化工具批量获取信息或进行其他操作；</text>
+      <text class="legal-text">（5）其他违反法律法规或侵犯第三方合法权益的行为。</text>
+
+      <text class="legal-heading">5. 隐私保护</text>
+      <text class="legal-text">本小程序重视用户隐私保护。关于个人信息的收集、使用、存储等，请参阅《隐私政策》。</text>
+
+      <text class="legal-heading">6. 知识产权</text>
+      <text class="legal-text">本小程序中的所有内容，包括但不限于文字、图片、音频、视频、软件、程序、版面设计等，均受著作权法、商标法、专利法等相关法律法规的保护。</text>
+
+      <text class="legal-text">未经本小程序事先书面许可，您不得以任何方式使用、复制、修改、传播、展示上述内容。</text>
+
+      <text class="legal-heading">7. 免责声明</text>
+      <text class="legal-text">本小程序不对以下情况承担责任：</text>
+      <text class="legal-text">（1）因不可抗力导致的服务中断或延迟；</text>
+      <text class="legal-text">（2）因用户操作不当、设备故障、网络问题等导致的服务异常；</text>
+      <text class="legal-text">（3）因第三方原因（如微信平台故障）导致的服务中断；</text>
+      <text class="legal-text">（4）用户违反本协议或法律法规导致的一切损失。</text>
+
+      <text class="legal-heading">8. 协议的终止</text>
+      <text class="legal-text">本小程序有权在以下情况下终止向您提供服务：</text>
+      <text class="legal-text">（1）您违反本协议约定；</text>
+      <text class="legal-text">（2）您提供的资料不真实、不准确；</text>
+      <text class="legal-text">（3）您利用本服务从事违法违规活动；</text>
+      <text class="legal-text">（4）其他需要终止服务的情况。</text>
+
+      <text class="legal-heading">9. 争议解决</text>
+      <text class="legal-text">本协议的订立、执行、解释及争议解决均适用中华人民共和国法律。如发生争议，双方应友好协商解决；协商不成的，可向本小程序运营方所在地人民法院提起诉讼。</text>
+
+      <text class="legal-heading">10. 联系我们</text>
+      <text class="legal-text">如对本协议有任何疑问，请通过小程序内提供的联系方式与我们联系。</text>
+
+      <text class="legal-text">本协议自发布之日起生效。</text>
+    </view>
+
+    <!-- 隐私政策 -->
+    <view wx:if="{{type === 'privacy'}}">
+      <text class="legal-title">隐私政策</text>
+      <text class="legal-text">生效日期：2026年1月7日</text>
+      <text class="legal-text">更新日期：2026年1月7日</text>
+
+      <text class="legal-heading">引言</text>
+      <text class="legal-text">欢迎您使用本小程序。我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最小必要原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</text>
+      <text class="legal-text">请在使用我们的产品或服务前，仔细阅读并了解本《隐私政策》。</text>
+
+      <text class="legal-heading">一、我们如何收集和使用您的个人信息</text>
+      <text class="legal-text">我们会遵循正当、合法、必要的原则，仅为实现产品功能，向您提供服务之目的，收集和使用您的个人信息。</text>
+
+      <text class="legal-subheading">1.1 账号注册与登录</text>
+      <text class="legal-text">当您注册和登录本小程序时，我们需要收集您的以下信息：</text>
+      <text class="legal-text">• 微信授权信息：包括昵称、头像、openid等，用于身份识别和账号创建；</text>
+      <text class="legal-text">• 手机号码：用于账号验证、安全认证和重要通知；</text>
+      <text class="legal-text">• 昵称：用于在小程序内展示您的用户信息。</text>
+      <text class="legal-text">上述信息为必要信息，您拒绝提供将无法注册和使用本小程序的基本功能。</text>
+
+      <text class="legal-subheading">1.2 课程预约服务</text>
+      <text class="legal-text">当您使用课程预约服务时，我们会收集以下信息：</text>
+      <text class="legal-text">• 预约信息：包括预约的课程、时间、人数等；</text>
+      <text class="legal-text">• 记录信息：您的预约记录、签到记录等。</text>
+      <text class="legal-text">上述信息用于为您提供预约服务和管理预约记录。</text>
+
+      <text class="legal-subheading">1.3 订阅消息</text>
+      <text class="legal-text">当您使用订阅消息功能时，我们会：</text>
+      <text class="legal-text">• 在您同意的情况下，向您的微信发送预约成功、取消等通知消息；</text>
+      <text class="legal-text">• 记录您的订阅状态（订阅有效期为7天），并在您登录时自动检查订阅状态。</text>
+      <text class="legal-text">您可以随时在小程序内管理或取消订阅消息。</text>
+
+      <text class="legal-subheading">1.4 位置信息</text>
+      <text class="legal-text">当您使用涉及地理位置的功能时，经您授权，我们会收集您的位置信息，用于：</text>
+      <text class="legal-text">• 展示附近的服务位置；</text>
+      <text class="legal-text">• 提供基于位置的服务推荐。</text>
+      <text class="legal-text">位置信息为敏感个人信息，您可以拒绝授权，但这将影响相关功能的使用。</text>
+
+      <text class="legal-subheading">1.5 信息存储与访问</text>
+      <text class="legal-text">我们会将您的个人信息存储在中华人民共和国境内的服务器上。在满足法律法规要求的前提下，我们可能会将您的个人信息存储在境外。</text>
+      <text class="legal-text">我们会采取相应的安全保护措施来保护您的个人信息。</text>
+
+      <text class="legal-subheading">1.6 Cookie和同类技术的使用</text>
+      <text class="legal-text">我们会使用Cookie、像素标签等同类技术用于收集用户的个人信息，包括用户的访问日志、使用习惯等，用于改进产品功能和用户体验。</text>
+
+      <text class="legal-heading">二、我们如何使用Cookie和同类技术</text>
+      <text class="legal-text">为确保小程序正常运转，我们会在您的设备上存储小型数据文件，这些文件被称为Cookie。Cookie通常包含标识符、站点名称以及一些号码和字符。</text>
+      <text class="legal-text">借助于Cookie，小程序能够存储您的偏好等数据。我们不会将Cookie用于本隐私政策所述目的之外的任何用途。您可以根据自己的偏好管理或删除Cookie。</text>
+
+      <text class="legal-heading">三、我们如何共享、转让、公开披露您的个人信息</text>
+
+      <text class="legal-subheading">3.1 共享</text>
+      <text class="legal-text">我们不会向任何公司、组织和个人分享您的个人信息，但以下情况除外：</text>
+      <text class="legal-text">• 在获取明确同意的情况下：我们会根据您的授权，与第三方共享您的个人信息；</text>
+      <text class="legal-text">• 我们可能会根据法律法规规定，或按政府主管部门的强制性要求，对外共享您的个人信息；</text>
+      <text class="legal-text">• 在涉及合并、收购或破产清算时，如涉及到个人信息转让，我们会要求新的持有您个人信息的公司继续受本隐私政策的约束，否则我们将要求该公司重新向您征求授权同意。</text>
+
+      <text class="legal-subheading">3.2 转让</text>
+      <text class="legal-text">我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外：</text>
+      <text class="legal-text">• 在获取明确同意的情况下；</text>
+      <text class="legal-text">• 在涉及合并、收购或破产清算时，如涉及到个人信息转让，我们会要求新的持有您个人信息的公司继续受本隐私政策的约束，否则我们将要求该公司重新向您征求授权同意。</text>
+
+      <text class="legal-subheading">3.3 公开披露</text>
+      <text class="legal-text">我们仅会在以下情况下，公开披露您的个人信息：</text>
+      <text class="legal-text">• 获得您的明确同意；</text>
+      <text class="legal-text">• 基于法律法规或法律程序的要求；</text>
+      <text class="legal-text">• 在涉及公共利益的情况下，为保护用户或公众的人身财产安全。</text>
+
+      <text class="legal-heading">四、我们如何保护您的个人信息</text>
+      <text class="legal-text">我们已使用符合业界标准的安全保护措施保护您提供的个人信息，防止数据遭到未经授权的访问、公开披露、使用、修改、损坏或丢失。</text>
+      <text class="legal-text">我们会采取一切合理可行的措施，确保未收集与您所使用的服务无关的个人信息。</text>
+
+      <text class="legal-subheading">4.1 安全保护措施</text>
+      <text class="legal-text">• 数据加密：我们采用SSL/TLS加密技术对传输的数据进行加密；</text>
+      <text class="legal-text">• 访问控制：我们采取严格的访问控制措施，限制对您个人信息的访问；</text>
+      <text class="legal-text">• 安全审计：我们定期对安全措施进行审计和评估。</text>
+
+      <text class="legal-subheading">4.2 数据保留</text>
+      <text class="legal-text">我们仅在实现本隐私政策所述目的所需的期限内保留您的个人信息，除非法律要求或允许在更长的期限内保留这些信息。</text>
+      <text class="legal-text">当您注销账号后，我们会在合理期限内删除或匿名化处理您的个人信息。</text>
+
+      <text class="legal-subheading">4.3 安全事件</text>
+      <text class="legal-text">若发生个人信息安全事件，我们会按照法律法规的要求，及时向您告知事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议等。</text>
+
+      <text class="legal-heading">五、您的权利</text>
+      <text class="legal-text">您拥有以下权利：</text>
+      <text class="legal-text">• 访问您的个人信息；</text>
+      <text class="legal-text">• 更正您的个人信息；</text>
+      <text class="legal-text">• 删除您的个人信息；</text>
+      <text class="legal-text">• 改变您授权同意的范围；</text>
+      <text class="legal-text">• 注销您的账号。</text>
+
+      <text class="legal-text">您可以通过小程序内的相关功能或联系我们，行使上述权利。对于您的合理请求，我们原则上不收取费用，但对于多次重复、超出合理限度的请求，我们将视情况收取一定成本费用。</text>
+
+      <text class="legal-heading">六、未成年人保护</text>
+      <text class="legal-text">本小程序主要面向成年人。如果您是未成年人，请在您的监护人的指导下阅读和使用本小程序。</text>
+      <text class="legal-text">如果您是未成年人的监护人，请您关注未成年人在使用本小程序时的个人信息保护情况。</text>
+
+      <text class="legal-heading">七、隐私政策的更新</text>
+      <text class="legal-text">我们可能适时更新本隐私政策。当本隐私政策发生变更时，我们会通过适当的方式向您提示变更后的隐私政策。</text>
+      <text class="legal-text">如您不同意更新后的隐私政策，您可以停止使用本小程序。如您继续使用本小程序，即表示您同意接受更新后的隐私政策。</text>
+
+      <text class="legal-heading">八、如何联系我们</text>
+      <text class="legal-text">如您对本隐私政策或您个人信息的相关事宜有任何疑问、意见或建议，请通过小程序内提供的联系方式与我们联系。</text>
+      <text class="legal-text">我们将在15个工作日内回复您的请求。</text>
+
+      <text class="legal-heading">九、争议解决</text>
+      <text class="legal-text">因本隐私政策引起的或与本隐私政策有关的任何争议，双方应友好协商解决；协商不成的，可向本小程序运营方所在地人民法院提起诉讼。</text>
+    </view>
+  </view>
+</view>

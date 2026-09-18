@@ -1,0 +1,46 @@
+@import "../../../style/skin.wxss";
+.submit-line {
+	width: 100%;
+}
+
+.form-group .mobile {
+	flex: 1;
+	text-align: left;
+}
+
+.submit-line {
+	width: 100%;
+}
+
+.form-group .mobile {
+	flex: 1;
+	text-align: left;
+	font-size:28rpx;
+}
+
+.agreement-check-container {
+	width: 100%;
+	padding: 30rpx 0;
+	margin-bottom: 20rpx;
+}
+
+.agreement-check-label {
+	display: flex;
+	align-items: flex-start;
+	font-size: 26rpx;
+	line-height: 1.6;
+}
+
+.agreement-check-label checkbox {
+	margin-top: 4rpx;
+	margin-right: 10rpx;
+}
+
+.agreement-text {
+	color: #666;
+}
+
+.agreement-link {
+	color: #576b95;
+	text-decoration: underline;
+}

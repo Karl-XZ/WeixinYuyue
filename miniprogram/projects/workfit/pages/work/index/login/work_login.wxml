@@ -1,0 +1,42 @@
+<view class="main-work bg-work">
+
+	<view class="login">
+
+		<view class="pic"><text class="icon-peoplefill text-red"></text></view>
+		<view class="hint">教师平台</view>
+
+		<view class="form-group margin-top">
+			<view class="title">手机：</view>
+			<input type="number" maxlength="11" placeholder="请输入手机号码" placeholder-class="phc" value="{{phone}}" bindinput="bindInput" data-field="phone"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">密码：</view>
+			<input maxlength="30" type="password" placeholder="请输入您的密码" placeholder-class="phc" value="{{pwd}}" bindinput="bindInput" data-field="pwd"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">教师密码：</view>
+			<input maxlength="30" type="password" placeholder="请输入教师密码" placeholder-class="phc" value="{{teacherPwd}}" bindinput="bindInput" data-field="teacherPwd"></input>
+		</view>
+
+		<view class="agreement-check-container">
+			<checkbox-group bindchange="bindAgreementChange">
+				<label class="agreement-check-label">
+					<checkbox value="agreed" checked="{{agreed}}" color="#FED202" />
+					<text class="agreement-text">我已阅读并同意</text>
+					<text class="agreement-link" bindtap="url" data-url="/pages/legal/legal?type=agreement">《用户服务协议》</text>
+					<text class="agreement-text">和</text>
+					<text class="agreement-link" bindtap="url" data-url="/pages/legal/legal?type=privacy">《隐私政策》</text>
+				</label>
+			</checkbox-group>
+		</view>
+
+		<button class="btn bg-work margin-bottom margin-top" bindtap="bindLoginTap" disabled="{{submitting}}">{{submitting ? '登录中...' : '点击登录'}}</button>
+		<view bindtap="url" data-url="../register/work_register" class="return text-grey">没有账号？去注册</view>
+		<view class="return text-grey">本系统仅限于教师登录</view>
+		<view bindtap="url" data-url="../../../my/index/my_index" class="return text-grey"><text class="icon-back"></text>返回学生端</view>
+
+	</view>
+
+</view>

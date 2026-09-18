@@ -1,0 +1,62 @@
+<view class="main-work bg-work">
+
+	<view class="login">
+
+		<view class="pic"><text class="icon-peoplefill text-red"></text></view>
+		<view class="hint">教师注册</view>
+
+		<view class="form-group margin-top">
+			<view class="title">姓名：</view>
+			<input maxlength="30" placeholder="请输入姓名" placeholder-class="phc" value="{{name}}" bindinput="bindInput" data-field="name"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">手机：</view>
+			<input type="number" maxlength="11" placeholder="请输入手机号码" placeholder-class="phc" value="{{phone}}" bindinput="bindInput" data-field="phone"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">密码：</view>
+			<input maxlength="30" type="password" placeholder="请设置登录密码" placeholder-class="phc" value="{{pwd}}" bindinput="bindInput" data-field="pwd"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">教师密码：</view>
+			<input maxlength="30" type="password" placeholder="请输入教师密码" placeholder-class="phc" value="{{teacherPwd}}" bindinput="bindInput" data-field="teacherPwd"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">邮箱：</view>
+			<input maxlength="80" placeholder="请输入邮箱地址" placeholder-class="phc" value="{{email}}" bindinput="bindInput" data-field="email"></input>
+		</view>
+
+		<view class="form-group">
+			<view class="title">验证码：</view>
+			<input maxlength="6" type="number" placeholder="请输入邮箱验证码" placeholder-class="phc" value="{{emailCode}}" bindinput="bindInput" data-field="emailCode"></input>
+		</view>
+
+		<view class="code-btn-container">
+			<button class="code-btn-full" bindtap="bindSendEmailCodeTap" disabled="{{codeSending || countDown > 0}}">
+				{{countDown > 0 ? countDown + 's后重新发送' : '发送验证码到邮箱'}}
+			</button>
+		</view>
+
+		<view class="agreement-check-container">
+			<checkbox-group bindchange="bindAgreementChange">
+				<label class="agreement-check-label">
+					<checkbox value="agreed" checked="{{agreed}}" color="#FED202" />
+					<text class="agreement-text">我已阅读并同意</text>
+					<text class="agreement-link" bindtap="url" data-url="/pages/legal/legal?type=agreement">《用户服务协议》</text>
+					<text class="agreement-text">和</text>
+					<text class="agreement-link" bindtap="url" data-url="/pages/legal/legal?type=privacy">《隐私政策》</text>
+				</label>
+			</checkbox-group>
+		</view>
+
+		<button class="btn bg-work margin-bottom margin-top" bindtap="bindRegisterTap" disabled="{{submitting}}">{{submitting ? '提交中...' : '提交注册'}}</button>
+		<view class="return text-grey" bindtap="bindGoLoginTap">已有账号？去登录</view>
+		<view bindtap="url" data-url="../../../my/index/my_index" class="return text-grey"><text class="icon-back"></text>返回学生端</view>
+
+	</view>
+
+</view>

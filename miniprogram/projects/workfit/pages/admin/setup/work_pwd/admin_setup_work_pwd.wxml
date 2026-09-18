@@ -1,0 +1,30 @@
+<view wx:if="{{!isLoad}}" class="margin-top load loading text-l text-admin"></view>
+
+<view class="main-admin" wx:if="{{isLoad}}">
+
+	<view class="bar bg-white solid-bottom margin-top-s ">
+		<view class="action">
+			<text class="icon-title"></text>教师密码设置
+		</view>
+	</view>
+
+	<view class="comm-list menu margin-top">
+		<view class="item">
+			<view class="content">
+				<text class="icon-lock text-orange"></text>
+				<text class="text-black">当前教师密码：{{oldPwd ? '已设置' : '未设置(默认123456)'}}
+				</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="form-box bg-white margin-top">
+		<view class="form-group margin-top">
+			<view class="title">新教师密码：</view>
+			<input placeholder="请输入 1-30 位教师密码" maxlength="30" placeholder-class="phc" model:value="{{pwd}}"></input>
+		</view>
+
+		<button class="btn-admin margin-top" bindtap="bindSaveTap">保存</button>
+	</view>
+
+</view>

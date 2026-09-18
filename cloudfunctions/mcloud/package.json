@@ -1,0 +1,23 @@
+{
+    "name": "cloud",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node --test tests/*.test.js",
+        "coverage": "c8 --temp-directory .c8-tmp --reporter=text --reporter=html --all --include \"project/workfit/**/*.js\" node --test tests/*.test.js",
+        "test:integration": "node --test integration/tencent_cloud.integration.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "date-utils": "^1.2.21",
+        "mysql": "^2.18.1",
+        "node-xlsx": "^0.16.1",
+        "wx-server-sdk": "~2.1.2",
+        "nodemailer": "^6.9.0"
+    },
+    "devDependencies": {
+        "c8": "^10.1.3"
+    }
+}
